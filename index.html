@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Quiz App!</h1>
+    <p>Test your knowledge with our trivia questions. 
+        Select the correct answer for each question and see how well you score!</p>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <div id="quiz-container" class="container hide" >
+    <section>
+    <h2>Question <span id="question-number"></span></h2>
+    <h3 id="question"></h3> 
+    <ul id="choices"></ul>
+    <button id="next-btn" class="hide" style="margin-top: 30px;">Next</button>
+    </section>
+  </div>
+
+  <div id="result-container" class="container hide">
+    <h2>Your Score</h2>
+    <p id="score"></p>
+    <button id="restart-btn">Restart Quiz</button>
+  </div>
+
+  <div id="leaderboard-container" class="container hide">
+    <h2>Leaderboard</h2>
+    <ol id="leaderboard"></ol>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
